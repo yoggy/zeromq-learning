@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zeromq-pub", "zeromq-pub\zeromq-pub.vcxproj", "{5865743E-99E6-4B23-BA8E-2FC1A118167A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zeromq-sub", "zeromq-sub\zeromq-sub.vcxproj", "{D8E683B9-AFDA-4F2D-9AE4-CBF58C51C0BA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "build-all", "build-all\build-all.vcxproj", "{19952597-8921-4DEA-A3CD-F2F8588656B1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5865743E-99E6-4B23-BA8E-2FC1A118167A} = {5865743E-99E6-4B23-BA8E-2FC1A118167A}
+		{235DD548-83C4-4DB6-A834-2F4ADE9A6364} = {235DD548-83C4-4DB6-A834-2F4ADE9A6364}
+		{345B9D58-04C9-4C28-82B0-F3F25CC3D723} = {345B9D58-04C9-4C28-82B0-F3F25CC3D723}
+		{D8E683B9-AFDA-4F2D-9AE4-CBF58C51C0BA} = {D8E683B9-AFDA-4F2D-9AE4-CBF58C51C0BA}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zeromq-req", "zeromq-req\zeromq-req.vcxproj", "{345B9D58-04C9-4C28-82B0-F3F25CC3D723}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pub-sub", "pub-sub", "{BA73008E-77D9-4026-96E3-B6F16351D97C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "req-rep", "req-rep", "{12A02CE6-0389-4E55-9A5C-6EC8EC63F0BC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zeromq-rep", "zeromq-rep\zeromq-rep.vcxproj", "{235DD548-83C4-4DB6-A834-2F4ADE9A6364}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5865743E-99E6-4B23-BA8E-2FC1A118167A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5865743E-99E6-4B23-BA8E-2FC1A118167A}.Debug|Win32.Build.0 = Debug|Win32
+		{5865743E-99E6-4B23-BA8E-2FC1A118167A}.Release|Win32.ActiveCfg = Release|Win32
+		{5865743E-99E6-4B23-BA8E-2FC1A118167A}.Release|Win32.Build.0 = Release|Win32
+		{D8E683B9-AFDA-4F2D-9AE4-CBF58C51C0BA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D8E683B9-AFDA-4F2D-9AE4-CBF58C51C0BA}.Debug|Win32.Build.0 = Debug|Win32
+		{D8E683B9-AFDA-4F2D-9AE4-CBF58C51C0BA}.Release|Win32.ActiveCfg = Release|Win32
+		{D8E683B9-AFDA-4F2D-9AE4-CBF58C51C0BA}.Release|Win32.Build.0 = Release|Win32
+		{19952597-8921-4DEA-A3CD-F2F8588656B1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{19952597-8921-4DEA-A3CD-F2F8588656B1}.Debug|Win32.Build.0 = Debug|Win32
+		{19952597-8921-4DEA-A3CD-F2F8588656B1}.Release|Win32.ActiveCfg = Release|Win32
+		{19952597-8921-4DEA-A3CD-F2F8588656B1}.Release|Win32.Build.0 = Release|Win32
+		{345B9D58-04C9-4C28-82B0-F3F25CC3D723}.Debug|Win32.ActiveCfg = Debug|Win32
+		{345B9D58-04C9-4C28-82B0-F3F25CC3D723}.Debug|Win32.Build.0 = Debug|Win32
+		{345B9D58-04C9-4C28-82B0-F3F25CC3D723}.Release|Win32.ActiveCfg = Release|Win32
+		{345B9D58-04C9-4C28-82B0-F3F25CC3D723}.Release|Win32.Build.0 = Release|Win32
+		{235DD548-83C4-4DB6-A834-2F4ADE9A6364}.Debug|Win32.ActiveCfg = Debug|Win32
+		{235DD548-83C4-4DB6-A834-2F4ADE9A6364}.Debug|Win32.Build.0 = Debug|Win32
+		{235DD548-83C4-4DB6-A834-2F4ADE9A6364}.Release|Win32.ActiveCfg = Release|Win32
+		{235DD548-83C4-4DB6-A834-2F4ADE9A6364}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D8E683B9-AFDA-4F2D-9AE4-CBF58C51C0BA} = {BA73008E-77D9-4026-96E3-B6F16351D97C}
+		{5865743E-99E6-4B23-BA8E-2FC1A118167A} = {BA73008E-77D9-4026-96E3-B6F16351D97C}
+		{345B9D58-04C9-4C28-82B0-F3F25CC3D723} = {12A02CE6-0389-4E55-9A5C-6EC8EC63F0BC}
+		{235DD548-83C4-4DB6-A834-2F4ADE9A6364} = {12A02CE6-0389-4E55-9A5C-6EC8EC63F0BC}
+	EndGlobalSection
+EndGlobal
