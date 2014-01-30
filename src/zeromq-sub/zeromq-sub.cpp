@@ -31,9 +31,8 @@ int main(int argc, char* argv[])
 	int buf_size = 1024 * 1024 * 4;
 	buf = (char *)malloc(buf_size);
 	memset(buf, 0, buf_size);
-	memset(buf, 'A', buf_size-1);
 
-	DWORD old_t;
+	DWORD old_t = 0;
 	while (1) {
 		// recieve message
 		int size = zmq_recv(socket, buf, buf_size, 0);
