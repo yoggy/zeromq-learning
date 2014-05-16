@@ -7,9 +7,9 @@
 
 #include "zmq.h"
 #if _DEBUG
-#pragma comment(lib, "libzmq-v100-mt-gd-4_0_3.lib")
+#pragma comment(lib, "libzmq-v100-mt-gd-4_0_4.lib")
 #else
-#pragma comment(lib, "libzmq-v100-mt-4_0_3.lib")
+#pragma comment(lib, "libzmq-v100-mt-4_0_4.lib")
 #endif
 
 int main(int argc, char* argv[])

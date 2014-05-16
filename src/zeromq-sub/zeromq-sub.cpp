@@ -7,9 +7,9 @@
 
 #include "zmq.h"
 #if _DEBUG
-#pragma comment(lib, "libzmq-v100-mt-gd-4_0_3.lib")
+#pragma comment(lib, "libzmq-v100-mt-gd-4_0_4.lib")
 #else
-#pragma comment(lib, "libzmq-v100-mt-4_0_3.lib")
+#pragma comment(lib, "libzmq-v100-mt-4_0_4.lib")
 #endif
 
 int main(int argc, char* argv[])
@@ -17,7 +17,6 @@ int main(int argc, char* argv[])
 	void *context = zmq_ctx_new();
 	void *socket = zmq_socket(context, ZMQ_SUB);
 	zmq_setsockopt(socket, ZMQ_SUBSCRIBE, NULL, 0);
-
 	int rv = zmq_connect(socket, "tcp://127.0.0.1:12345");
 	if (rv != 0) {
 		printf("zmq_connect() failed...%s\n", zmq_strerror(zmq_errno()));
