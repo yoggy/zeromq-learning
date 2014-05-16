@@ -2,16 +2,24 @@ zeromq-learning
 ========
 
 pub-sub model
+--------
+ソースコード
   * [src/zeromq-pub/zeromq-pub.cpp](src/zeromq-pub/zeromq-pub.cpp)
   * [src/zeromq-sub/zeromq-sub.cpp](src/zeromq-sub/zeromq-sub.cpp)
+
+メモ
   * publishしたデータはすべてのsubscriberが受信するモデル
   * pub・subどちらもlisten側になることができる
   * pub・subどちら側から起動してもOK
   * pub・subのどちら側を再起動しても再接続される
 
 push-pull model
+--------
+ソースコード
   * [src/zeromq-push/zeromq-push.cpp](src/zeromq-push/zeromq-push.cpp)
   * [src/zeromq-pull/zeromq-pull.cpp](src/zeromq-pull/zeromq-pull.cpp)
+
+メモ
   * pushしたデータはどれか一つのpull側が受信するモデル
   * push・pullどちらもlisten側になることができる
     * push側がlistenしている場合は、誰かpullするまでzmq_send()はブロックする。
@@ -20,6 +28,9 @@ push-pull model
   * push・pullのどちら側を再起動しても再接続される
 
 req-res model
+--------
+
+ソースコード
   * [src/zeromq-req/zeromq-req.cpp](src/zeromq-req/zeromq-req.cpp)
   * [src/zeromq-res/zeromq-res.cpp](src/zeromq-res/zeromq-res.cpp)
 
